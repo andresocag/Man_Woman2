@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Hombre o Mujer?
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item>
+      <ion-label floating >CURP</ion-label>
+      <ion-input type="text" [(ngModel)]="data.curp"></ion-input>
+      
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button block color="dark" (click)="Adivina()">Adivina</button>
+  </div>
+
+</ion-content>

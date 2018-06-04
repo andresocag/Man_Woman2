@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Genero</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngIf='curpSrv.letra'>
+    <ion-card-header>
+      Eres un Hombre!!
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <button ion-item>bigoton</button>
+        <button ion-item>feo</button>
+        <button ion-item>fuerte</button>
+        <button ion-item>Formal</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf='!curpSrv.letra'>
+    <ion-card-header>
+      Eres una hermosa Mujer!!
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <button ion-item>hermosa</button>
+        <button ion-item>pelo largo</button>
+        <button ion-item>Inteligente</button>
+        <button ion-item>gran sonrisa</button>
+        <button ion-item>coqueta</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div padding>
+    <button ion-button block color="dark" (click)="atras()">Atrás</button>
+  </div>
+
+</ion-content>
